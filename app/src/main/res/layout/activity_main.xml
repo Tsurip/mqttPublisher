@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:text="@string/Desc"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:background="@color/Vermelho"
+        />
+
+    <EditText
+        android:id="@+id/edHostServer"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusBar"
+        android:layout_alignStart="@id/btnConectar"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/Laranja"
+        android:hint="@string/host"
+        android:textColor="@color/Laranja"
+        android:textColorHint="@color/Laranja30"/>
+
+    <EditText
+        android:id="@+id/edTopicPublish"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edHostServer"
+        android:layout_alignStart="@+id/btnConectar"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/Laranja"
+        android:hint="@string/topic"
+        android:textColor="@color/Laranja"
+        android:textColorHint="@color/Laranja30"/>
+
+    <Button
+        android:id="@+id/btnConectar"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edTopicPublish"
+        android:background="@color/Laranja"
+        android:text="@string/btnConnectar"
+        android:elevation="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/edMensagemReceiver"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/Laranja"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnConectar"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"/>
+
+</RelativeLayout>

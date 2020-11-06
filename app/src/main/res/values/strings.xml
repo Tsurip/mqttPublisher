@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MQTTReceiver</string>
+    <string name="host">Insira o HostServer</string>
+    <string name="Desc">Desconectado</string>
+    <string name="topic">Insira o Topic</string>
+    <string name="btnConnectar">Conectar</string>
+</resources>
